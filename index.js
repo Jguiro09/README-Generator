@@ -39,7 +39,18 @@ const questions = [
         type: "input",
         message: "Any tests for your project?",
         name: "test",
-    }];
+    },
+    {
+        type: "input",
+        message: "Please enter your github username",
+        name: "github"
+    },
+    {
+        type: "input",
+        message: "Please enter your email address",
+        name: "email"
+    }
+];
 
 inquirer.prompt(questions)
     .then((response) => 
