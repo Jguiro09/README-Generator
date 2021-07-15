@@ -1,7 +1,7 @@
 // TODO: Include packages needed for this application
-const util = require('util');
 const inquirer = require('inquirer');
 const fs = require('fs');
+const generateMarkdown = require('./utils/generateMarkdown');
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -26,18 +26,25 @@ const questions = [
         name: "use",
     },
     {
-        type: "input",
+        type: "list",
         message: "What license are you using?",
-        name: "license"
+        name: "license",
+        choices: [
+            "None",
+            "Apache License 2.0",
+            "GNU General Public License V3.0",
+            "MIT License",
+            "BSD 3-Clause"
+        ]
     },
     {
         type: "input",
-        message: "Did anyone help you with your project?",
+        message: "What are the contribution guidlines?",
         name: "help",
     }, 
     {
         type: "input",
-        message: "Any tests for your project?",
+        message: "Test Instructions?",
         name: "test",
     },
     {
@@ -52,63 +59,20 @@ const questions = [
     }
 ];
 
-inquirer.prompt(questions)
-    .then((response) => 
-        writeToFile("README1", response)
-    );
-
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile(`${fileName}.md`, template(data), (err) =>
+    fs.writeFile(`${fileName}.md`, generateMarkdown(data), (err) =>
     err ? console.error(err) : console.log('Success!')
     );
 }
 
-function template(data)
-{
-return `# ${data.title}
-
-## Description
-
-${data.description}
-
-## Table of Contents
-
-[Installation](#Installation)  
-[Usage](#Usage)  
-[License](#License)  
-[Contributing](#Contributing)  
-[Tests](#Tests)  
-[Questions](#Questions)  
-
-## Installation
-
-${data.install}
-
-## Usage
-
-${data.use}
-
-## License
-
-${data.license}
-
-## Contributing
-
-${data.contributing}
-
-## Tests
-
-${data.test}
-
-## Questions
-
-${data.github}
-${data.email}`
-}
-
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    inquirer.prompt(questions)
+    .then((response) => 
+        writeToFile("README", response),
+    );
+}
 
 // Function call to initialize app
 init();

@@ -1,42 +1,42 @@
-# README-Generator
+# README Generator
 
-## Badge
-
-LISCENSE GOES HERE
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
 
-INPUT FOR TEXT GOES HERE
+Utilizing node's packages and javascript, you are able to create a README simply by answering simple questions about your project!
 
 ## Table of Contents
 
-[Installation](#Installation)
-[Usage](#Usage)
-[License](#License)
-[Contributing](#Contributing)
-[Tests](#Tests)
-[Questions](#Questions)
+[Installation](#Installation)  
+[Usage](#Usage)  
+[License](#License)  
+[Contributing](#Contribution-Guidelines)  
+[Tests](#How-To-Test)  
+[Questions](#Questions)  
 
 ## Installation
 
-INPUT FOR TEXT GOES HERE
+```Clone this project and inside your terminal type "node index.js"```
 
 ## Usage
 
-INPUT FOR TEXT GOES HERE
+This project is currently a solo project and will not accept help
 
 ## License
 
-INPUT FOR TEXT GOES HERE
+  This project is licensed by: MIT License  
+  The link to this license is: https://opensource.org/licenses/MIT
 
-## Contributing
+## Contribution Guidelines
 
-INPUT FOR TEXT GOES HERE
+This project is currently a solo project and will not accept help!
 
-## Tests
+## How to Test
 
-INPUT FOR TEXT GOES HERE
+The test for this project is actually this README you are readiing!
 
 ## Questions
 
-INPUT FOR TEXT GOES HERE
+[github](https://github.com/jguiro09)  
+jguiro09@gmail.com  
