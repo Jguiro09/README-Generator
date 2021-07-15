@@ -34,7 +34,8 @@ This project is currently a solo project and will not accept help!
 
 ## How to Test
 
-The test for this project is actually this README you are readiing!
+The test for this project is actually this README you are reading!  
+[Video Of It In Action Here!](https://www.youtube.com/watch?v=aOQNw4y-B6M&ab_channel=JacobGuiro) 
 
 ## Questions
 
